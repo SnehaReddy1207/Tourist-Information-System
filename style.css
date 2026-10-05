@@ -1,0 +1,87 @@
+/* General Styling */
+body {
+    padding-top: 70px;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    background-color: #0d47a1 !important;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    margin-left: 10px;
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("images/bg.jpg") no-repeat center/cover;
+}
+
+
+/* Search Box */
+.search-box {
+    max-width: 400px;
+}
+
+
+/* Cards */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+
+/* About Section */
+#about {
+    max-width: 900px;
+}
+
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: 90vh;
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h3 {
+        font-size: 1.3rem;
+    }
+}
